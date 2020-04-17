@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha() {
+	document.write("<br><br>");
+
+}
+
+function mostra(frase) {
+	document.write("<big>" + frase + "</big>");
+	pulaLinha();
+
+}
+
+
+var time = prompt("Qual o time do seu coração?");
+var vitorias = parseInt(prompt("quantas vitorias no campeonato"));
+var empates = parseInt(prompt("quantos empates no campeonato"));
+
+var pontos = vitorias * 3 + empates;
+
+mostra("O " + time + " tem " + pontos + " pontos no campeonato.");
+
+
+if(pontos > 3) {
+	mostra("o " + time + " esta melhor que no ano passado.");
+
+}
+
+if(pontos < 3) {
+	mostra("o " + time + " esta pior que o ano passado");
+
+}
+
+if(pontos == 3) {
+	mostra("o " + time + " esta igual o ano passado");
+
+}
+
+mostra("FIM");
+
+
+
+
+
+
+</script>
